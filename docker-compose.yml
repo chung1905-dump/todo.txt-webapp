@@ -1,0 +1,15 @@
+version: '2.1'
+
+services:
+  nginx:
+    image: nginx:alpine
+    volumes:
+      - ./docker/nginx/server.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./src:/var/www/html:ro
+  php:
+    build:
+      context: ./docker/php
+    volumes:
+      - ./src:/var/www/html:ro
+      - ./data/.todo:/home/www-data/.todo:ro
+      - ./data/todo-txt:/todo-txt

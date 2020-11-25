@@ -32,7 +32,7 @@ $cmd2 = get_cmd($_POST, 'cmd2');
     <div id="top">
 
         <h1><a href="<?php echo $todoUrl; ?>">todo.txt</a></h1>
-                    
+
         <form id="todo" name="todo" action="<?php echo $todoUrl; ?>" method="POST">
         <input autocapitalize="off" autocorrect="off" 
                type="text" id="cmd" name="cmd" 
