@@ -1,10 +1,7 @@
 <?php
 require_once('../includes/config.php');
-require_once('../includes/access.php');
 require_once('../includes/todo.php');
-if (isset($_GET['logout'])) {
-    $_GET['logout'] == 'true' ? logout() : '';
-}
+
 $cmd = get_cmd($_POST);
 $cmd2 = get_cmd($_POST, 'cmd2');
 ?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
@@ -14,9 +11,7 @@ $cmd2 = get_cmd($_POST, 'cmd2');
     <title>todo.txt</title>
 
     <meta name="viewport" content="initial-scale=1.0,maximum-scale=1,user-scalable=0"/>
-    <?php if ($iphoneWebApp == 'yes') { ?>
-        <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <?php } ?>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
     <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/icon_180.png"/>
 
     <link media="screen" href="css/stylesheet.css" rel="stylesheet" type="text/css">
@@ -30,11 +25,8 @@ $cmd2 = get_cmd($_POST, 'cmd2');
 
 <body>
 <div id="container">
-
     <div id="top">
-
         <h1><a href="<?php echo $todoUrl; ?>">todo.txt</a></h1>
-
         <form id="todo" name="todo" action="<?php echo $todoUrl; ?>" method="POST">
             <input autocapitalize="off" autocorrect="off"
                    type="text" id="cmd" name="cmd"
@@ -58,11 +50,6 @@ $cmd2 = get_cmd($_POST, 'cmd2');
         }
         ?>
     </div>
-
-    <div id="footer">
-        <a href="<?php echo $todoUrl; ?>?logout=true">Logout</a>
-    </div>
-
 </div>
 </body>
 </html>

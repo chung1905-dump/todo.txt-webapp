@@ -15,7 +15,6 @@
  *
 */
 
-
 /* URL
  * The root URL for this site, like so:
  * $todoUrl = "http://yourdomain.com/path/to/todo/";
@@ -33,21 +32,3 @@ $todoUrl = "";
  *
 */
 $todoCmd = "todo.sh -p";
-
-/* Simple authentication 
- * Set your username and password here
-*/
-$user = "";
-$password = "";
-
-
-/* iPhone only: use as a "web app" or not?
- * Default is 'no', change to 'yes' if you want to use this.
- * This means if you add an icon to your home screen, it will open
- * without normal Safari browser chrome. 
- * Cool idea, but it annoyed me, though I left it in as an option.
-*/
-$iphoneWebApp = "no";
-
-
-?>
