@@ -22,7 +22,7 @@ $cmd2 = get_cmd($_POST, 'cmd2');
     <link media="screen" href="pub/css/stylesheet.css" rel="stylesheet" type="text/css">
     <link media="handheld" href="pub/css/handheld.css" rel="stylesheet" type="text/css">
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script type="text/javascript" src="pub/js/todo.js">
     </script>
 
