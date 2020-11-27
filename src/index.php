@@ -17,7 +17,7 @@ $cmd2 = get_cmd($_POST, 'cmd2');
     <?php if ($iphoneWebApp == 'yes') { ?>
         <meta name="apple-mobile-web-app-capable" content="yes"/>
     <?php } ?>
-    <link rel="apple-touch-icon" href="todotxt_logo.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="pub/media/favicon/icon_180.png"/>
 
     <link media="screen" href="pub/css/stylesheet.css" rel="stylesheet" type="text/css">
     <link media="handheld" href="pub/css/handheld.css" rel="stylesheet" type="text/css">

@@ -7,9 +7,9 @@ Designed to work well in Mobile Safari on an iPhone/iPod Touch. Also tested on a
 
 A screenshot, `screenshot.png` is included.
 
-Author: Jon Smajda     
+Author: Chung     
 License: GPL,  http://www.gnu.org/copyleft/gpl.html     
-URL: http://github.com/smajda/todo.txt-web
+URL: https://github.com/chung1905/todo.txt-web
 
 
 
