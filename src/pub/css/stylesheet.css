@@ -1,24 +1,26 @@
 html, body {
     margin: 0;
     padding: 0;
-    height:100%;
+    height: 100%;
 }
+
 body {
     font-family: 'Lucida Grande', 'Verdana', sans-serif;
 }
+
 #container {
     min-height: 100%;
     position: relative;
 }
 
-h1{
+h1 {
     font-size: 1.2em;
-    text-align:center;
+    text-align: center;
     padding: 0;
 }
 
-a { 
-    color: #008; 
+a {
+    color: #008;
 }
 
 /* login form */
@@ -26,11 +28,13 @@ a {
 div#login-box {
     padding: 1em 10% 3em 10%;
 }
+
 form#login input.wide {
     margin-bottom: 7px;
     width: 100%;
     font-size: 1em;
 }
+
 form#login input#rememberme {
     margin-bottom: 2em;
 }
@@ -45,25 +49,25 @@ span.auth-message {
     text-align: center;
 }
 
-
-
-
 /* todo form */
-div#top { 
-    overflow: hidden; 
-    padding: 0; 
-    margin: 0; 
-    background: #eee; 
+div#top {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background: #eee;
     border-bottom: solid 1px #777;
 }
+
 div#top form {
     margin: 0 5% 0.5em 5%;
 }
-input#cmd{
+
+input {
     width: 100%;
     font-size: 1em;
 }
-input#sub{
+
+button[name="submit"] {
     width: 100%;
     margin-top: 0.5em;
     font-size: 1.0em;
@@ -71,27 +75,31 @@ input#sub{
 
 
 /* output */
-div#output { 
-    margin: 0; 
+div#output {
+    margin: 0;
     padding-bottom: 3em; /* height of footer */
-    -webkit-text-size-adjust:none;
+    -webkit-text-size-adjust: none;
 }
+
 #results-note {
-    font-weight: bold; 
+    font-weight: bold;
     padding: 7px;
 }
+
 code {
-    font-family: 'Monaco','Courier','Courier New', monospace;
-    font-weight: normal; 
+    font-family: 'Monaco', 'Courier', 'Courier New', monospace;
+    font-weight: normal;
     font-size: 1.3em;
-    background-color: #eee; 
+    background-color: #eee;
     padding: 2px;
 }
+
 ul {
     margin: 0 5px 6px -2.2em;
     padding-bottom: 3em;
 }
-ul li { 
+
+ul li {
     text-indent: -1.7em;
     padding: 0.5em 0.5 0.5em 1.7em;
     list-style: none;
@@ -99,12 +107,14 @@ ul li {
 }
 
 a.todo-number {
-   color: #999;
-   text-decoration: none;
+    color: #999;
+    text-decoration: none;
 }
+
 a.todo-tag {
     text-decoration: none;
 }
+
 a.todo-extlink {
     color: #770000;
     text-decoration: none;
@@ -117,7 +127,7 @@ div#footer {
     height: 3em;
 
     margin: 0;
-    padding: 1em 0 0 0 ;
+    padding: 1em 0 0 0;
     width: 100%;
 
     background-color: #eee;
