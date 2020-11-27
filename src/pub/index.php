@@ -1,7 +1,7 @@
 <?php
-require_once('includes/config.php');
-require_once('includes/access.php');
-require_once('includes/todo.php');
+require_once('../includes/config.php');
+require_once('../includes/access.php');
+require_once('../includes/todo.php');
 if (isset($_GET['logout'])) {
     $_GET['logout'] == 'true' ? logout() : '';
 }
@@ -17,13 +17,13 @@ $cmd2 = get_cmd($_POST, 'cmd2');
     <?php if ($iphoneWebApp == 'yes') { ?>
         <meta name="apple-mobile-web-app-capable" content="yes"/>
     <?php } ?>
-    <link rel="apple-touch-icon" sizes="180x180" href="pub/media/favicon/icon_180.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/icon_180.png"/>
 
-    <link media="screen" href="pub/css/stylesheet.css" rel="stylesheet" type="text/css">
-    <link media="handheld" href="pub/css/handheld.css" rel="stylesheet" type="text/css">
+    <link media="screen" href="css/stylesheet.css" rel="stylesheet" type="text/css">
+    <link media="handheld" href="css/handheld.css" rel="stylesheet" type="text/css">
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script type="text/javascript" src="pub/js/todo.js">
+    <script type="text/javascript" src="js/todo.js">
     </script>
 
 </head>
