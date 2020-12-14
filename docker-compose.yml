@@ -9,7 +9,10 @@ services:
   php:
     build:
       context: ./docker/php
+      args:
+        USER: #leave it empty to use your current user
+        UID: ${UID:-1000} # https://docs.docker.com/compose/compose-file/#variable-substitution
     volumes:
-      - ./src:/var/www/html:ro
+      - ./src:/var/www/html
       - ./data/.todo:/home/www-data/.todo:ro
       - ./data/todo-txt:/todo-txt

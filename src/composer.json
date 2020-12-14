@@ -1,0 +1,25 @@
+{
+    "name": "chungn/todo.txt-web",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chung",
+            "email": "me@chungn.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/chung1905/todotxt-parser.git"
+        }
+    ],
+    "require": {
+        "alister/todotxt-parser": "dev-main"
+    }
+}

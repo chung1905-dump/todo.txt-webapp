@@ -10,3 +10,6 @@ deploy_favicon:
 
 clean_favicon:
 	cd ./utils/favicon-generator/ && make clean
+
+generate_env:
+	echo "UID=$(shell id -u)" > .env
