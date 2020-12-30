@@ -31,7 +31,7 @@ class ControllerMatcher
         string $namespace = 'App'
     ): string {
         return sprintf(
-            '%s\\Controller\\%s\\%s\\%s',
+            '%s\\Controller\\%s\\%s\\%sController',
             $namespace,
             ucfirst($type),
             ucfirst($group),
