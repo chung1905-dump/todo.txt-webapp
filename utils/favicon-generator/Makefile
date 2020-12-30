@@ -7,7 +7,7 @@ mkdir_out:
 	mkdir out -p
 
 generate_svg: mkdir_out
-	node generate-svg.js > out/icon.svg
+	node generate-svg.js ${text} > out/icon.svg
 
 generate_png: mkdir_out
 	convert -size 180x ./out/icon.svg ./out/icon_180.png

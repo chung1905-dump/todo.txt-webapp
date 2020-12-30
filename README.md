@@ -9,7 +9,7 @@ A screenshot, `screenshot.png` is included.
 
 Author: Chung     
 License: GPL,  http://www.gnu.org/copyleft/gpl.html     
-URL: https://github.com/chung1905/todo.txt-web
+URL: https://gitlab.com/chung1905/todo.txt-webapp
 
 
 
