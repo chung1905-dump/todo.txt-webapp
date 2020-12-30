@@ -4,9 +4,9 @@ namespace App\Core\Http;
 
 class Request
 {
-    private const DEFAULT_TYPE = 'html';
-    private const DEFAULT_GROUP = 'index';
-    private const DEFAULT_CONTROLLER = 'index';
+    public const DEFAULT_TYPE = 'html';
+    public const DEFAULT_GROUP = 'index';
+    public const DEFAULT_CONTROLLER = 'index';
 
     private static Request $instance;
 
@@ -55,37 +55,38 @@ class Request
 
     private function initGroup(): string
     {
-        if ($this->type === self::DEFAULT_TYPE) {
-            $i = 0;
-        } else {
-            $i = 1;
-        }
-
+        $i = $this->type === self::DEFAULT_TYPE ? 0 : 1;
         return isset($this->path[$i]) ? $this->path[$i] : self::DEFAULT_GROUP;
     }
 
     private function initController(): string
     {
-        if ($this->type === self::DEFAULT_TYPE) {
-            $i = 1;
-        } else {
-            $i = 2;
-        }
-
+        $i = $this->type === self::DEFAULT_TYPE ? 1 : 2;
         return isset($this->path[$i]) ? $this->path[$i] : self::DEFAULT_CONTROLLER;
     }
 
     private function initParameters(): array
     {
-        if ($this->type === self::DEFAULT_TYPE) {
-            $i = 2;
-        } else {
-            $i = 3;
-        }
+        $i = $this->type === self::DEFAULT_TYPE ? 2 : 3;
 
         $path = array_slice($this->getPath(), $i);
-        var_dump($path);
-        return [];
+        $params = [];
+
+        $j = 0;
+        while ($j < count($path)) {
+            if (!isset($path[$j])) {
+                break;
+            }
+            if (isset($path[$j + 1])) {
+                $params[$path[$j]] = $path[$j + 1];
+            } else {
+                $params[$path[$j]] = true;
+            }
+
+            $j += 2;
+        }
+
+        return $params;
     }
 
     private function initJson(): array
@@ -122,6 +123,21 @@ class Request
     public static function getInstance(): Request
     {
         return self::$instance;
+    }
+
+    public function getType(): string
+    {
+        return $this->type;
+    }
+
+    public function getGroup(): string
+    {
+        return $this->group;
+    }
+
+    public function getController(): string
+    {
+        return $this->controller;
     }
 
     public function getMethod(): string

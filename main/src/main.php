@@ -8,7 +8,7 @@ try {
     require_once __DIR__ . DS . '..' . DS . 'vendor' . DS . 'autoload.php';
     Http\Request::init();
     $cm = new Http\ControllerMatcher();
-    $cm->match(Http\Request::getInstance());
+    $cm->match(Http\Request::getInstance())->run()->return();
 } catch (Throwable $e) {
     throw $e;
 }
