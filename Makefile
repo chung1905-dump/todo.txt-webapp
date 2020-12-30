@@ -1,19 +1,26 @@
 APP_NAME=todo.txt
+EXEC=docker-compose exec -w /var/www/html/ php
 
-run: generate_env
+run: _generate_env _docker_up _composer_install
 
 build: favicon_all
 
-favicon_all: generate_favicon deploy_favicon clean_favicon
+_docker_up:
+	docker-compose up -d
 
-generate_favicon:
+_composer_install:
+	${EXEC} composer install
+
+favicon_all: _generate_favicon _deploy_favicon _clean_favicon
+
+_generate_favicon:
 	cd ./utils/favicon-generator/ && make all text=${APP_NAME}
 
-deploy_favicon:
+_deploy_favicon:
 	mv ./utils/favicon-generator/out/ ./src/pub/media/favicon/
 
-clean_favicon:
+_clean_favicon:
 	cd ./utils/favicon-generator/ && make clean
 
-generate_env:
+_generate_env:
 	echo "UID=$(shell id -u)" > .env

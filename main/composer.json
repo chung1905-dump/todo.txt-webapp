@@ -13,13 +13,14 @@
             "App\\": "src/"
         }
     },
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/chung1905/todotxt-parser.git"
-        }
-    ],
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
     "require": {
-        "alister/todotxt-parser": "dev-main"
+        "alister/todotxt-parser": "^1.0"
     }
 }
