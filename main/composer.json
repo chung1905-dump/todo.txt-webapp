@@ -1,5 +1,5 @@
 {
-    "name": "chungn/todo.txt-web",
+    "name": "chungn/todo-php",
     "type": "project",
     "license": "MIT",
     "authors": [
@@ -19,8 +19,5 @@
             "*": "dist"
         },
         "sort-packages": true
-    },
-    "require": {
-        "alister/todotxt-parser": "^1.0"
     }
 }

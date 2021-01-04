@@ -55,7 +55,7 @@ class Request
 
     private function initGroup(): string
     {
-        $i = $this->type === self::DEFAULT_TYPE ? 0 : 1;
+        $i = $this->type === self::DEFAULT_GROUP ? 0 : 1;
         return isset($this->path[$i]) ? $this->path[$i] : self::DEFAULT_GROUP;
     }
 

@@ -4,74 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4898c98c8839f37851da2d10003cef5",
-    "packages": [
-        {
-            "name": "alister/todotxt-parser",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/alister/todotxt-parser.git",
-                "reference": "550019836a369403f391ec58afb96c43b6cb24fe"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/alister/todotxt-parser/zipball/550019836a369403f391ec58afb96c43b6cb24fe",
-                "reference": "550019836a369403f391ec58afb96c43b6cb24fe",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.4 || ^8"
-            },
-            "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-                "ergebnis/composer-normalize": "^2.5",
-                "hamcrest/hamcrest-php": "^2",
-                "mockery/mockery": "^1.3",
-                "php-parallel-lint/php-parallel-lint": "^1.2",
-                "phpstan/extension-installer": "^1",
-                "phpstan/phpstan": "^0.12.25",
-                "phpstan/phpstan-mockery": "^0.12.5",
-                "phpstan/phpstan-phpunit": "^0.12.8",
-                "phpunit/phpunit": "^9.1",
-                "psy/psysh": "^0.10.4",
-                "slevomat/coding-standard": "^6.3",
-                "squizlabs/php_codesniffer": "^3.5",
-                "symfony/console": "^5.1",
-                "symfony/filesystem": "^5.1",
-                "symfony/framework-bundle": "^5.1",
-                "symplify/easy-ci": "^9.0",
-                "vimeo/psalm": "^4.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Alister\\Todotxt\\Parser\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Alister Bulman",
-                    "email": "abulman@gmail.com",
-                    "homepage": "https://abulman.co.uk/"
-                }
-            ],
-            "description": "parser for the TodoTxt format",
-            "keywords": [
-                "parser",
-                "todotxt"
-            ],
-            "support": {
-                "issues": "https://github.com/alister/todotxt-parser/issues",
-                "source": "https://github.com/alister/todotxt-parser/tree/v1.0.0"
-            },
-            "time": "2020-12-14T14:55:16+00:00"
-        }
-    ],
+    "content-hash": "5383945d8e34cdeab501e2c633fcca6d",
+    "packages": [],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",

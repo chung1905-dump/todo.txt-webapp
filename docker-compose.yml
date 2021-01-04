@@ -14,4 +14,4 @@ services:
         UID: ${UID:-1000} # https://docs.docker.com/compose/compose-file/#variable-substitution
     volumes:
       - ./main:/var/www/html
-      - ./data/todo-txt:/todo-txt
+      - ./data:/srv/data

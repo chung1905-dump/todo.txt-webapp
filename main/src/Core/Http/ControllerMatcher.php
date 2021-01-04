@@ -2,6 +2,8 @@
 
 namespace App\Core\Http;
 
+use App\Core\Http\Exception\ControllerNotFound;
+
 class ControllerMatcher
 {
     public function match(Request $request): ?ControllerInterface
@@ -13,12 +15,12 @@ class ControllerMatcher
         );
 
         if (!class_exists($class)) {
-            throw new \Exception("Controller $class not found");
+            throw new ControllerNotFound("Controller $class not found");
         }
 
         $controller = new $class($request);
         if (!$controller instanceof ControllerInterface) {
-            throw new \Exception("$class not implement ControllerInterface");
+            throw new ControllerNotFound("$class not implement ControllerInterface");
         }
 
         return $controller;
