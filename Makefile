@@ -5,13 +5,13 @@ run: _generate_env _docker_up _composer_install
 
 build: favicon_all
 
+favicon_all: _generate_favicon _deploy_favicon _clean_favicon
+
 _docker_up:
 	docker-compose up -d
 
 _composer_install:
 	${EXEC} composer install
-
-favicon_all: _generate_favicon _deploy_favicon _clean_favicon
 
 _generate_favicon:
 	cd ./utils/favicon-generator/ && make all text=${APP_NAME}

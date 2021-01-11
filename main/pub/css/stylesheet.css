@@ -1,136 +1,47 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
 body {
-    font-family: 'Lucida Grande', 'Verdana', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #212529;
+    color: #f8f9fa;
+    text-align: left;
 }
 
-#container {
-    min-height: 100%;
-    position: relative;
+div.form {
+    max-width: 90%;
 }
 
-h1 {
-    font-size: 1.2em;
-    text-align: center;
-    padding: 0;
-}
-
-a {
-    color: #008;
-}
-
-/* login form */
-
-div#login-box {
-    padding: 1em 10% 3em 10%;
-}
-
-form#login input.wide {
-    margin-bottom: 7px;
-    width: 100%;
-    font-size: 1em;
-}
-
-form#login input#rememberme {
-    margin-bottom: 2em;
-}
-
-span.auth-message {
+input.txt {
+    border-radius: 0;
+    padding: 1% 5%;
+    background: #131618;
+    color: #fff;
+    border: 1px solid #495057;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    font-size: 1rem;
+    line-height: 1.5;
     display: block;
-    margin: 2em auto 1em auto;
-    padding: 1em;
-    width: 40%;
-    border: solid 1pt #777;
-    background-color: #eee;
+    width: 100%;
+}
+
+button.btn {
+    cursor: pointer;
+    border-color: #131618;
+    border-radius: 0;
+    padding: .5% 5%;
+    font-size: .9rem;
+    transition: background .1s linear;
+    display: inline-block;
+    font-weight: 400;
     text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    line-height: 1.5;
 }
 
-/* todo form */
-div#top {
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    background: #eee;
-    border-bottom: solid 1px #777;
-}
-
-div#top form {
-    margin: 0 5% 0.5em 5%;
-}
-
-input {
-    width: 100%;
-    font-size: 1em;
-}
-
-button[name="submit"] {
-    width: 100%;
-    margin-top: 0.5em;
-    font-size: 1.0em;
-}
-
-
-/* output */
-div#output {
-    margin: 0;
-    padding-bottom: 3em; /* height of footer */
-    -webkit-text-size-adjust: none;
-}
-
-#results-note {
-    font-weight: bold;
-    padding: 7px;
-}
-
-code {
-    font-family: 'Monaco', 'Courier', 'Courier New', monospace;
-    font-weight: normal;
-    font-size: 1.3em;
-    background-color: #eee;
-    padding: 2px;
-}
-
-ul {
-    margin: 0 5px 6px -2.2em;
-    padding-bottom: 3em;
-}
-
-ul li {
-    text-indent: -1.7em;
-    padding: 0.5em 0.5 0.5em 1.7em;
-    list-style: none;
-    border-bottom: solid 1px #ccc;
-}
-
-a.todo-number {
-    color: #999;
-    text-decoration: none;
-}
-
-a.todo-tag {
-    text-decoration: none;
-}
-
-a.todo-extlink {
-    color: #770000;
-    text-decoration: none;
-}
-
-/* footer */
-div#footer {
-    position: absolute;
-    bottom: 0;
-    height: 3em;
-
-    margin: 0;
-    padding: 1em 0 0 0;
-    width: 100%;
-
-    background-color: #eee;
-    text-align: center;
-    border-top: solid 1px #777;
+button.btn-primary {
+    background: #0062cc;
+    border: #001933 1px solid;
+    color: #fff;
 }
